@@ -15,13 +15,13 @@ Specific APIs
 ```
 localhost/questions/users/{userID}            //All questions user does not answer yet
 	
-localhost/answers/users/{userID}			  //All answers of user
+localhost/answers/users/{userID}	      //All answers of user
 	
 localhost/answers/users/{userID}/{qustionID}  //user's answer for certain question
 ```
 
 
-##Requirements
+## Requirements
 
 1. Please create the data structures to store these different kinds of questions that can be served to the widget.  
 
