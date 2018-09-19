@@ -16,4 +16,7 @@ import java.util.List;
 public interface AnswerRepository extends CrudRepository<Answer, Integer>{
     @Query("select a from Answer a where a.uid = :uid")
     List<Answer> findAllByUid(@Param(value = "uid") Integer uid);
+
+    @Query("select a from Answer a where a.uid = :uid and  a.qid = :qid")
+    List<Answer> findAllByUidAndQid(@Param(value = "uid") Integer uid, @Param(value = "qid") Integer qid);
 }

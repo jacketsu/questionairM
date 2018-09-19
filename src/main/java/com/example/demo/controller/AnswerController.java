@@ -51,6 +51,12 @@ public class AnswerController {
         return answerRepository.findAllByUid(uid);
     }
 
+    @GetMapping(value = "/answers/users/{uid}/{qid}")
+    public List<Answer> answersFindByUid(@PathVariable("uid") Integer uid,
+                                         @PathVariable("qid") Integer qid) {
+        return answerRepository.findAllByUidAndQid(uid, qid);
+    }
+
     @PostMapping(value = "/answers/{id}")
     public Answer answersUpdate(@PathVariable("id") int id,
                                 @RequestParam("uid") int uid,
