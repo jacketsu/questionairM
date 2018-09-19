@@ -7,7 +7,6 @@ import java.util.List;
 
 import com.example.demo.entity.User;
 import com.example.demo.repository.TriviaQRepository;
-import com.sun.tools.corba.se.idl.InterfaceGen;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.example.demo.entity.TriviaQ;
